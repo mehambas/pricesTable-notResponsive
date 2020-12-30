@@ -1,0 +1,156 @@
+/* genel */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Pontano Sans', sans-serif; 
+    background-color: #0d7377;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* container */
+
+#prices-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#price-boxes{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box{
+    float: left;
+    width: 30%;
+    height: 30rem;
+    align-items: center;
+    color: #fff;
+    box-shadow: 2px 4px 2px 2px #313530;
+    transition: linear height 0.5s, width linear 0.5s, color linear 0.5s;
+    margin: 1rem;
+}
+
+.box:hover .heading-line{
+    font-size: 1.6rem;
+    text-shadow: 1px 0px 3px #fff;
+    letter-spacing: 0.1rem;
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover{
+    height: 32rem;
+    width: 33%;
+}
+/* ------------------------*/
+
+.box-1:hover .btn{
+    background-color: #708160;
+    color: #fff;
+}
+
+.box-2:hover .btn{
+    background-color: #035aa6;
+    color: #fff;
+}
+
+.box-3:hover .btn{
+    background-color: #e28a46;
+    color: #fff;
+}
+
+/* ------------------------*/
+
+.box-1:hover .price-line{
+    background-color: #708160;
+}
+
+.box-2:hover .price-line{
+    background-color: #035aa6;
+}
+
+.box-3:hover .price-line{
+    background-color: #e28a46;
+}
+
+/* ------------------------*/
+
+.fa-telegram-plane, .fa-check-circle, .fa-star{
+    transition: linear color 0.5s;
+}
+
+.box-1:hover .fa-telegram-plane{
+    color: #708160;
+}
+
+.box-2:hover .fa-check-circle{
+    color: #035aa6;
+}
+
+.box-3:hover .fa-star{
+    color: #e28a46;
+}
+
+/* box inline items */
+
+.heading-line{
+    font-size: 1.4rem;
+    height: 10%;
+    background-color: #313530;
+    text-transform: uppercase;
+    transition: linear font-size 0.5s, text-shadow linear 0.5s, letter-spacing linear 0.5s;
+}
+
+.price-line{
+    height: 25%;
+    font-size: 2rem;
+    background-color: #444444;
+    text-transform: uppercase;
+    transition: linear background-color 0.5s;
+}
+
+.values{
+    height: 8%;
+    font-size: 1rem;
+    background-color: #DEF0F4;
+    color: #313530;
+    border-bottom: 0.4px solid #313530;
+}
+
+
+.btn1{
+    background-color: #313530;
+    height: 16%;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #DEF0F4;
+    color: #313530;
+    padding: 8px 18px;
+    border-radius: 14px;
+    transition: box-shadow linear 0.5s, linear color 0.5s, background-color linear 0.5s;;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 5px 2px #fff !important;
+}
+
+
+
+
